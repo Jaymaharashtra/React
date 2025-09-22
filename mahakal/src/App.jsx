@@ -1,30 +1,18 @@
 import React, { useState } from "react";
+import Header from "./assets/component/Header";
+import Footer from "./assets/component/Footer";
+import Page1 from "./assets/component/Page1";
 
+const App = () => {
 
-const App = () =>{
-
-    const [username, setusername] = useState('');
-    
-    const submitHandler = (e) =>{
-        e.preventDefault();
-        console.log('submitted....')
-        console.log(username)
-    }
-    return(
+   
+  return (
     <div>
-        <form onSubmit={(e)=>{
-            submitHandler(e)
-        }}>
-            <input value={username} onChange={(e)=>{
-                    setusername(e.target.value);
-            }}  type="text" placeholder="enter value"></input>
-            <button>Submit</button>
-            <button onClick={()=>{
-                setusername('');
-            }}>Reset</button>
-        </form>
+      <Header/>
+      <Page1/>
+      <Footer/>
     </div>
-    );
-}
+  );
+};
 
 export default App;

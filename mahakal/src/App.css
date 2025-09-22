@@ -8,3 +8,8 @@ button{
   background-color: khaki;
   color: rebeccapurple;
 }
+
+Footer{
+  position: absolute;
+  bottom: 100%;
+}
