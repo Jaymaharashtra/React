@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+h1{
+  background-color: rgb(110, 74, 74);
+}
+button{
+  padding: 50px;
+  background-color: khaki;
+  color: rebeccapurple;
+}
